@@ -6,6 +6,16 @@ Pigeon is separated into two components:
 - The public hosted MCP server is in Cloudflare and uses GitHub login.
 - This package starts the **local node** on a computer or server. Installing a ChatGPT plugin alone does not start a local node.
 
+## Install from public GitHub (available now)
+
+Requires Node.js **22+**.
+
+```sh
+npx --yes --package github:luoluoluo22/pigeon-node pigeon-node connect
+```
+
+This executes from GitHub, not from the npm Registry. **The package has not yet been published to npm.** It connects in the foreground; stop it with Ctrl+C.
+
 ## Try from npm (after publication)
 
 Requires Node.js **22+**.
@@ -20,10 +30,10 @@ The `run` command keeps a signed outbound WebSocket connected while the process 
 
 ## Servers (Linux)
 
-For a durable process, **install a pinned version** into a trusted location and manage it with systemd:
+For a durable process, **install a pinned version** into a trusted location and manage it with systemd. A versioned GitHub tag can be used until npm Registry publication:
 
 ```sh
-npm install --global @luoluoluo22/pigeon-node@0.1.0
+npm install --global github:luoluoluo22/pigeon-node#v0.1.0
 pigeon-node setup
 pigeon-node run
 ```
@@ -44,6 +54,6 @@ Use the machine owner's unprivileged user and a persistent home directory. Put `
 - The cloud uses per-device signature verification, owner-scoped device listings and WebSocket channels.
 - No remote command execution or filesystem APIs.
 - Only small text test messages are supported currently. **No file transfer, remote control or E2EE**.
-- Public npm release and public GitHub account onboarding remain pending. This package is a pre-publication candidate.
+- Public GitHub package is available; npm Registry publication and onboarding of arbitrary GitHub accounts remain pending. This package is a pre-publication candidate.
 
 License: not yet selected for public distribution. Do not repackage it as an official signed installer.
