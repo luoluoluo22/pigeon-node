@@ -1,0 +1,33 @@
+{
+  "name": "@luoluoluo22/pigeon-node",
+  "version": "0.1.0",
+  "description": "Pigeon device connector for Windows, Linux and servers (early preview)",
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "pigeon-node": "./bin/pigeon-node.mjs"
+  },
+  "files": [
+    "bin/pigeon-node.mjs",
+    "runtime/node-agent.mjs",
+    "README.md"
+  ],
+  "dependencies": {
+    "ws": "^8.18.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "pigeon",
+    "cloudflare",
+    "device",
+    "websocket",
+    "remote",
+    "node",
+    "cli"
+  ]
+}
