@@ -11,10 +11,10 @@ Pigeon is separated into two components:
 Requires Node.js **22+**.
 
 ```sh
-npx --yes --package github:luoluoluo22/pigeon-node pigeon-node connect
+npx --yes --package https://github.com/luoluoluo22/pigeon-node/releases/download/v0.1.0/luoluoluo22-pigeon-node-0.1.0.tgz pigeon-node connect
 ```
 
-This executes from GitHub, not from the npm Registry. **The package has not yet been published to npm.** It connects in the foreground; stop it with Ctrl+C.
+This downloads the pinned public [GitHub Release](https://github.com/luoluoluo22/pigeon-node/releases/tag/v0.1.0) directly; no Git installation, GitHub login, or npm login is required to obtain the package. **The package has not yet been published to the npm Registry.** The node requires a device enrollment code from an authorized account, and runs in the foreground until Ctrl+C.
 
 ## Try from npm (after publication)
 
