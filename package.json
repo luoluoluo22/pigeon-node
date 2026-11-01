@@ -2,6 +2,9 @@
   "name": "@luoluoluo22/pigeon-node",
   "version": "0.1.0",
   "description": "Pigeon device connector for Windows, Linux and servers (early preview)",
+  "repository": {"type":"git","url":"git+https://github.com/luoluoluo22/pigeon-node.git"},
+  "homepage": "https://pigeon-dev.a1137583371.workers.dev/",
+  "bugs": {"url":"https://github.com/luoluoluo22/pigeon-support/issues"},
   "type": "module",
   "license": "UNLICENSED",
   "engines": {
